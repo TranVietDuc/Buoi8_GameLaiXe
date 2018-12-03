@@ -1,0 +1,9 @@
+#myCanvas{
+    border-width : 10px ;
+    border: solid ;
+    border-color: black;
+    background-color: darkgrey;
+}
+#car{
+    display: none;
+   }

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body onload="SetUpEventForDiv()">
+<div id="div">Hello Babes!</div>
+<input id="text" type="text" placeholder="Insert here"/>
+<input id="button" type="button" value="Check it" />
+<script>
+    function SetUpEventForDiv(){
+        var text = document.getElementById("text");
+        var button = document.getElementById("button");
+        text.onchange = Event_for_textOnchange;
+        button.onclick = Event_for_onclick;
+}
+function Event_for_textOnchange(){
+    var button = document.getElementById("button");
+    button.setAttribute('value','Easy_onChange');
+    button.setAttribute('style','color: red');
+}
+function Event_for_onclick() {
+    var button = document.getElementById("button");
+    button.setAttribute('value','onClick');
+    button.setAttribute('style','color: green');
+
+}
+
+</script>
+</body>
+
+</html>
